@@ -113,10 +113,5 @@ Update the CDK deployment:
 cdk deploy
 Access the Application:
 Once the deployment is complete, you can access the application through the CloudFront distribution URL.
-Note:
-•	This example assumes you are using the CDK for IaC. Make sure you have the AWS CDK installed (npm install -g aws-cdk) and initialized (cdk init).
-•	Adjust the CDK script based on your specific requirements and architecture.
-•	Security considerations (e.g., VPC settings, security groups, IAM roles) are important and should be configured appropriately based on your organization's security policies.
-
 
 

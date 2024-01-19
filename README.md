@@ -1,6 +1,6 @@
-# Supermarket_Demo
+]# Supermarket_Demo
 Simple_Supermarket_Demo
-To deploy the supermarket checkout Java application in AWS and implement CDN caching, you can follow the steps below. This example assumes you're using AWS services like Amazon ECS (Elastic Container Service) for deploying containers and Amazon CloudFront for CDN caching. Additionally, AWS CDK (Cloud Development Kit) will be used for IaC.
+To deploy the supermarket checkout Java application in AWS and implement CDN caching, you can follow the steps below. This example demonstrates using AWS services like Amazon ECS (Elastic Container Service) for deploying containers and Amazon CloudFront for CDN caching. Additionally, AWS CDK (Cloud Development Kit) will be used for IaC.
 Prerequisites:
 1.	AWS Account: Make sure you have an AWS account, and you have AWS CLI configured with the necessary credentials.
 2.	Docker: Ensure that Docker is installed on your local machine to build and push the Docker image.

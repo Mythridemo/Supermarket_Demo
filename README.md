@@ -5,8 +5,8 @@ Prerequisites:
 1.	AWS Account: Make sure you have an AWS account, and you have AWS CLI configured with the necessary credentials.
 2.	Docker: Ensure that Docker is installed on your local machine to build and push the Docker image.
 3.	Steps:
-4.	1. Containerize the Java Application:
-5.	Ensure your Java application is containerized using Docker. Create a Dockerfile in the project root with the necessary instructions. Here's a basic example:
+	1. Containerize the Java Application:
+	2.Ensure your Java application is containerized using Docker. Create a Dockerfile in the project root with the necessary instructions. Here's a basic example:
 # Use a minimal base image
 FROM adoptopenjdk/openjdk17:alpine-jre
 

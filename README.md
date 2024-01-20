@@ -87,31 +87,12 @@ cdk deploy
 
 Implement CDN Caching with Amazon CloudFront:
 Create a CloudFront distribution to cache the content globally. Add the CloudFront distribution configuration in your CDK script:
-import software.amazon.awscdk.services.cloudfront.*;
-import software.amazon.awscdk.services.cloudfront.experimental.*;
-import software.amazon.awscdk.services.ecs.patterns.*;
+create S3bucket to store the files by using 
+aws s3 sync <source> <destination> 
+Select origin from s3 bucket and all necessary permissions and rules
+Take the Could front url and run it
 
-// ...
-
-// Create an ECS service with Fargate
-ApplicationLoadBalancedFargateService service = ApplicationLoadBalancedFargateService.Builder.create(this, "MyFargateService")
-        .cluster(cluster)
-        .taskDefinition(taskDefinition)
-        .desiredCount(1)
-        .listenerPort(80)
-        .build();
-
-// Create a CloudFront distribution
-Distribution distribution = Distribution.Builder.create(this, "MyDistribution")
-        .defaultBehavior(DefaultBehaviorOptions.builder()
-                .origin(service.getLoadBalancer())
-                .build())
-        .build();
-
-Update the CDK deployment:
-
-cdk deploy
-Access the Application:
-Once the deployment is complete, you can access the application through the CloudFront distribution URL.
+         
+You can access the application through the CloudFront distribution URL.
 
 
